@@ -54,7 +54,7 @@ spec:
              topologyKey: "kubernetes.io/hostname"
       initContainers:
         - name: pan-mgmt-init
-          image: us.gcr.io/panw-gcp-team-testing/paloaltonetworks/pan_cn_mgmt_init
+          image: us.gcr.io/panw-gcp-team-testing/paloaltonetworks/pan_cn_mgmt_init:3.0.2
           command: ["/usr/bin/pan_start.sh"]
           imagePullPolicy: IfNotPresent
           securityContext:

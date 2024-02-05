@@ -49,7 +49,7 @@ spec:
       #  firewall: pan-ngfw-ds
       containers:
         - name: pan-ngfw-container
-          image: us.gcr.io/panw-gcp-team-testing/paloaltonetworks/panos_cn_ngfw
+          image: us.gcr.io/panw-gcp-team-testing/paloaltonetworks/panos_cn_ngfw:10.1.3
           command: ["/sbin/pan_pause"]
           lifecycle:
             preStop:
